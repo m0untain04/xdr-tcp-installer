@@ -1,8 +1,8 @@
 #!/bin/bash
 # ------------------------------------------------------------------------
-# 							xdr-tcp-installer 1.0
+# 			xdr-tcp-installer 1.0
 #
-# 	Copyright (C) 2020-2021 Mihnea Stoicescu (aka MCS FM DX, m0untain)
+# Copyright (C) 2020-2021 Mihnea Stoicescu (aka MCS FM DX, m0untain)
 #
 #  This program is free software; you can redistribute it and/or
 #  modify it under the terms of the GNU General Public License
