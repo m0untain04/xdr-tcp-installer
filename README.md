@@ -2,4 +2,5 @@
 Shell script installer for XDR-GTK Server. (WORKS ONLY ON UBUNTU)
 
 # To do:
-Fix service xdr-tcp command.
+- Fix service xdr-tcp command.
+- When the server starts, icecast2 server also needs to be started.
