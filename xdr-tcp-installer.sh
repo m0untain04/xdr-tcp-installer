@@ -103,6 +103,7 @@ echo " "
 echo "Downloading config file..."
 cd /home/xdrd-master
 wget https://raw.githubusercontent.com/m0untain04/xdr-tcp-installer/main/start.sh
+chmod 777 start.sh
 clear 
 echo " "
 rm README.md
