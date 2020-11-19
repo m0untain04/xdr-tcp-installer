@@ -85,9 +85,9 @@ Description=XDR-TCP Service
 # User=spark
 # Type=simple
 # PIDFile=/run/my-service.pid
-ExecStart=/home/xdrd-master/./start.sh start
-ExecStop=/home/xdrd-master/./start.sh stop
-ExecRestart=/home/xdrd-master/./start.sh restart
+ExecStart=/home/xdrd-master/start.sh start
+ExecStop=/home/xdrd-master/start.sh stop
+ExecRestart=/home/xdrd-master/start.sh restart
 [Install]
 WantedBy=multi-user.target
 	" > xdr-tcp.service
@@ -117,27 +117,3 @@ echo "To start the server, first configure start.sh located in /home/xdrd-master
 echo "Then execute ./start.sh in directory /home/xdrd-master or you can use systemctl start xdr-tcp.service"
 read -p "Press enter to finish the installation process..."
 # END OF SCRIPT
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
