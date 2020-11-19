@@ -29,7 +29,7 @@ function startServer {
 	if [ -d $DIR ]; then
 		cd $DIR
 		if [ -f "xdrd" ]; then
-			screen -dmS xdr-tcp ./xdrd -t $PORT -u $MAXUSERS -p $PASSWORD 
+			/xdrd -t $PORT -u $MAXUSERS -p $PASSWORD 
 			echo "Server started !"
 		else
 			echo "Error: XDRD executable not found !"
@@ -44,7 +44,7 @@ function stopServer {
 	if [ $CHECK -eq 0 ]; then
 		echo "XDRD Server is currently not running."
 	else
-		killall $EXEC
+		killall xdrd
 		echo "XDRD Server stopped !"
 	fi
 }
