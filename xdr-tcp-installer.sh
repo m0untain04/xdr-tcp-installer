@@ -85,8 +85,9 @@ Description=XDR-TCP Service
 # User=spark
 # Type=simple
 # PIDFile=/run/my-service.pid
-ExecStart=/home/xdrd-master/start.sh start
-ExecStop=/home/xdrd-master/start.sh stop
+ExecStart=/home/xdrd-master/./start.sh start
+ExecStop=/home/xdrd-master/./start.sh stop
+ExecRestart=/home/xdrd-master/./start.sh restart
 [Install]
 WantedBy=multi-user.target
 	" > xdr-tcp.service
